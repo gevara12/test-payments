@@ -3,7 +3,7 @@
 export const ButtonClick = () => {
   const handleClick = () => {
     console.log('click');
-    window.postMessage('closeWebView', '*');
+    window.ReactNativeWebView.postMessage('closeWebView');
   };
   return <button onClick={handleClick}>Send postmessage</button>;
 };
